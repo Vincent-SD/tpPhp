@@ -16,10 +16,18 @@ function end_page()
 ?>
 
 <?php
-start_page('titre');
+start_page('test');
 ?>
 
-<hr/><br/><strong>Test</strong><br/><hr/>
+<?php
+$jour = date('l F d, Y');
+?>
+
+
+
+<?php
+$jour = date('d/m/Y', strtotime('2020-04-01'));
+?>
 
 <?php
 end_page();
