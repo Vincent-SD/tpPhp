@@ -33,7 +33,7 @@ echo $jour2;
 <br>
 <?php
 echo $jour;
-echo ',';
+echo '  ';
 echo $heure;
 ?>
 
