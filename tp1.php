@@ -21,7 +21,7 @@ start_page('test');
 
 <?php
 $jour = date('l F d, Y');
-$heure = date('g')
+$heure = date('g : i , a ')
 ?>
 
 
