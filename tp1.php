@@ -20,7 +20,7 @@ start_page('date');
 
 
 <?php
-$jour = date('l F d, Y');
+$jour = date('F d, Y');
 $heure = date('g : i , a ')
 ?>
 
