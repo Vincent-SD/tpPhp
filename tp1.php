@@ -28,6 +28,9 @@ $jour = date('l F d, Y');
 $jour2 = date('d/m/Y', strtotime($jour));
 
 echo $jour2;
+?>
+<br>
+<?php
 echo $jour;
 ?>
 
