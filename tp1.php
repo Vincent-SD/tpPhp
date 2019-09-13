@@ -20,7 +20,8 @@ start_page('test');
 
 
 <?php
-$jour = date('l F d, Y , g');
+$jour = date('l F d, Y');
+$heure = date('g')
 ?>
 
 
@@ -32,6 +33,8 @@ echo $jour2;
 <br>
 <?php
 echo $jour;
+echo ',';
+echo $heure;
 ?>
 
 <?php
