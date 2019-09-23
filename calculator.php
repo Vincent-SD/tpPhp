@@ -1,5 +1,7 @@
 <?php
 
+include 'tp1.php';
+
 start_page(calculator);
 ?>
 <input checked="checked" type="radio" name="op" value="*" /> * <br/>
