@@ -6,15 +6,15 @@ start_page('calculator');
 ?>
 
 <form action="calcul.php" method="post">
+    <input type="text" name="op"/> <br/>
+    <input type="text" name="op"/> <br/>
     <input checked="checked" type="radio" name="op" value="*" /> * <br/>
-    <input type="text" name="op"/> <br/>
-    <input type="text" name="op"/> <br/>
     <input type="radio" name="op" value="+" /> + <br/>
     <input type="radio" name="op" value="-" /> - <br/>
     <input type="radio" name="op" value="/" /> / <br/>
 
-    <a  value="submit"> <br/>
-    <a  value="reset"> <br/>
+    <input type="submit" value="submit"> <br/>
+    <input type="submit" value="reset"> <br/>
 </form>
 
 
