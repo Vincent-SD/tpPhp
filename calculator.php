@@ -9,6 +9,8 @@ start_page(calculator);
 
 <form action="calcul.php" method="post">
 
-end_page():
 
+<?php
+end_page();
+?>
 
