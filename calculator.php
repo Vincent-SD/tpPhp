@@ -2,7 +2,7 @@
 
 include 'functions.php';
 
-start_page(calculator);
+start_page('calculator');
 ?>
 
 <form action="calcul.php" method="post">
@@ -14,7 +14,6 @@ start_page(calculator);
     <input type="text" name="op"/> <br/>
     <a type="text" name="op" value="submit"> <br/>
     <a type="text" name="op" value="reset"> <br/>
-
 </form>
 
 
