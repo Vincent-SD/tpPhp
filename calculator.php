@@ -1,6 +1,6 @@
 <?php
 
-include 'tp1.php';
+include 'functions.php';
 
 start_page(calculator);
 ?>
