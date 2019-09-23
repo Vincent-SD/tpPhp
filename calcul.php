@@ -11,7 +11,7 @@ if('*'==$op)
     echo $op1 * $op2;
 
 }
-elseif('+'==$op)
+elseif('+'== $op)
 {
     echo $op1 + $op2;
 }
@@ -25,6 +25,6 @@ elseif ('/' == $op)
 }
 else
 {
-        echo'<br/><strong>opérateur'.$op.'nongéré</strong>';
+        echo'<br/><strong>opérateur '.$op.'non géré</strong>';
 }
 ?>
