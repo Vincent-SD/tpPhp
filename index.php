@@ -3,7 +3,7 @@
 <?php
 include 'utils.inc.php';
 
-start_page('date');
+start_page('formulaire');
 ?>
 
 
@@ -22,8 +22,9 @@ start_page('date');
    <option> afgranistan </option>
    <option> le bendo  </option>
  </select> <br>
- <input type="checkbox" placeholder="conditions générales"/> <br>
- <input type="submit" placeholder="soumettre"/> <br>
+    <label> conditions générales </label>
+ <input type="checkbox" /> <br>
+ <input type="submit" value="soumettre"/> <br>
 
 
 </form>
