@@ -2,24 +2,26 @@
 $op1=$_POST['op1'];
 $op2=$_POST['op2'];
 $op=$_POST['op'];
+$action=$_POST['action'];
+echo $action
 ?>
 
 
 <?php
-if('*'==$op)
+if('*'==$action)
 {
     echo $op1 * $op2;
 
 }
-elseif('+'== $op)
+elseif('+'== $action)
 {
     echo $op1 + $op2;
 }
-elseif ('-' == $op)
+elseif ('-' == $action)
 {
     echo $op1 - $op2;
 }
-elseif ('/' == $op)
+elseif ('/' == $action)
 {
     echo $op1 / $op2;
 }
