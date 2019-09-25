@@ -8,16 +8,16 @@ start_page('formulaire');
 
 
 
-<form  method="post">
- <input type="text" placeholder="identifiant" /> <br>
+<form action="data-processing.php" method="post">
+ <input type="text" placeholder="identifiant" name="identifiant" /> <br>
     <label> sexe </label> <br>
   <input type="radio" value="homme" name="genre" checked/> homme <br>
   <input type="radio" value="femme" name="genre" checked/> femme <br>
- <input type="text" placeholder="mail"/>   <br>
- <input type="password" placeholder="mot de passe"/> <br>
- <input type="password" placeholder="confirmer mot de passe" /> <br>
- <input type="text" placeholder="telephone" /> <br>
- <select placeholder="pays">
+ <input type="text" placeholder="mail" name="mail"/>   <br>
+ <input type="password" placeholder="mot de passe" name="mdp"/> <br>
+ <input type="password" placeholder="confirmer mot de passe" name="cmdp"/> <br>
+ <input type="text" placeholder="telephone" name="phone" /> <br>
+ <select placeholder="pays" name="pays">
    <option> france </option>
    <option> espagne </option>
    <option> nigeria</option>
@@ -25,8 +25,8 @@ start_page('formulaire');
    <option> le bendo  </option>
  </select> <br>
     <label> conditions générales </label>
- <input type="checkbox" /> <br>
- <input type="submit" value="soumettre"/> <br>
+ <input type="checkbox" name="conditions"/> <br>
+ <input type="submit" name="action" value="mailer"/> <br>
 
 
 </form>
