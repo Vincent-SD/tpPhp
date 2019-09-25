@@ -19,11 +19,11 @@ $operateurs = '*+-/';
 //    }
 //    echo 'type="radio" name="op" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . ' <br/>' . "\n";
 //    }
-?>
-    <button type="submit" name="action"> * </button>
-    <button type="submit" name="action"> + </button>
-    <button type="submit" name="action"> / </button>
-    <button type="submit" name="action"> - </button>
+//?>
+    <input type="submit" name="action"> * </input>
+    <input type="submit" name="action"> + </input>
+    <input type="submit" name="action"> / </input>
+    <input type="submit" name="action"> - </input>
     <input type="submit" value="submit" name="action"> <br/>
     <input type="reset" value="reset"> <br/>
 </form>
