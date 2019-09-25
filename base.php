@@ -11,7 +11,7 @@ or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
 
 
 
-mysqli_select_db($dbLink , 'user')
+mysqli_select_db($dbLink , 'vsd_bd')
 or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
 );
 
