@@ -10,9 +10,9 @@ start_page('formulaire');
 
 <form  method="post">
  <input type="text" placeholder="identifiant" /> <br>
-    <label> sexe </label>
-  <input type="radio" value="homme"/>
-  <input type="radio" value="femme"/>
+    <label> sexe </label> <br>
+  <input type="radio"/> homme <br>
+  <input type="radio"/> femme <br>
  <input type="text" placeholder="mail"/>   <br>
  <input type="password" placeholder="mot de passe"/> <br>
  <input type="password" placeholder="confirmer mot de passe" /> <br>
