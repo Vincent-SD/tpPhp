@@ -13,6 +13,3 @@ function end_page()
 }
 
 ?>
-
-
-

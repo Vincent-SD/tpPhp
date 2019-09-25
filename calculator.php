@@ -1,6 +1,6 @@
 <?php
 
-include 'functions.php';
+include 'utils.inc.php';
 
 start_page('calculator');
 $operateurs = '*+-/';
