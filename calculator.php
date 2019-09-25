@@ -21,7 +21,7 @@ $operateurs = '*+-/';
     }
 ?>
     <input type="submit" value="submit"> <br/>
-    <input type="submit" value="reset"> <br/>
+    <input type="reset" value="reset"> <br/>
 </form>
 
 
