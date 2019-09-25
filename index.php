@@ -11,8 +11,8 @@ start_page('formulaire');
 <form  method="post">
  <input type="text" placeholder="identifiant" /> <br>
     <label> sexe </label> <br>
-  <input type="radio"/> homme <br>
-  <input type="radio"/> femme <br>
+  <input type="radio" value="homme" checked/> homme <br>
+  <input type="radio" value="femme" checked/> femme <br>
  <input type="text" placeholder="mail"/>   <br>
  <input type="password" placeholder="mot de passe"/> <br>
  <input type="password" placeholder="confirmer mot de passe" /> <br>
