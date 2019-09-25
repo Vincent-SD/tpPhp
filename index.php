@@ -9,7 +9,7 @@ start_page('date');
 
 
 <form  method="post">
- <input type="text" value="identifiant" /> <br>
+ <input type="text" placeholder="identifiant" /> <br>
  <input type="radio" value="sexe"/> <br>
  <input type="text" value="mail"/>   <br>
  <input type="password" value="mot de passe"/> <br>
