@@ -18,4 +18,5 @@ or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
 
 
 end_page();
+//
 ?>
