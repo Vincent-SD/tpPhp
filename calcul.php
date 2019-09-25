@@ -5,7 +5,7 @@ $op=$_POST['op'];
 $action=$_POST['action'];
 echo $action
 ?>
-
+//
 
 <?php
 if('*'==$action)
