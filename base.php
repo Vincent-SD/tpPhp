@@ -6,7 +6,7 @@ include 'utils.inc.php';
 
 start_page('bd');
 
-$dbLink = mysqli_connect('localhost', 'vsd', 'EricZemour')
+$dbLink = mysqli_connect('localhost', 'vsd_bd', 'EricZemour')
 or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
 
 
