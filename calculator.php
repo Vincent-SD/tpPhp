@@ -3,6 +3,7 @@
 include 'functions.php';
 
 start_page('calculator');
+$operateurs = '*+-/';
 ?>
 
 <form action="calcul.php" method="post">
