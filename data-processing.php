@@ -38,7 +38,7 @@ if($action == 'mailer')
          \'' . $pays . '\' ,
          \'' . $today . '\' ,
          \'' . $sexe . '\' ,
-         \'' . $conditions . '\' ,
+         \'' . $conditions . '\'
          )';
 
     $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
