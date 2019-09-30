@@ -11,7 +11,7 @@ $identifiant = $_POST['identifiant'];
 $sexe = $_POST['genre'];
 $telephone = $_POST['telephone'];
 $pays = $_POST['pays'];
-$conditions = $_POST['pays'];
+$conditions = $_POST['conditions'];
 ;
 
 if($action == 'mailer')
