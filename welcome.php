@@ -6,7 +6,7 @@ include 'utils.inc.php';
 start_page('login');
 ?>
 
- <br/><strong> Bienvenue </strong><br/>;
+ <br/><strong> Bienvenue </strong><br/>
 
 <?php
 
