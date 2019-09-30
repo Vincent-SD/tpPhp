@@ -21,7 +21,7 @@ if($action == 'mailer')
     $query = 'INSERT INTO user (mail, identifiant, id, pass, telephone, pays, date, genre, conditions) 
         VALUES ( \'' . $email . '\' ,
          \'' . $identifiant . '\',
-         ,
+         \'' . 4 . '\' ,
          \'' . $password. '\' ,
          \'' . $telephone . '\' ,
          \'' . $pays . '\' ,
