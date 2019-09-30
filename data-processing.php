@@ -9,7 +9,7 @@ $email  = $_POST['mail'];
 $password = $_POST['mdp'];
 $identifiant = $_POST['identifiant'];
 $sexe = $_POST['genre'];
-$telephone = $_POST['telephone'];
+$telephone = $_POST['phone'];
 $pays = $_POST['pays'];
 $conditions = $_POST['conditions'];
 ;
