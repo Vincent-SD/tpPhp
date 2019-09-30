@@ -21,7 +21,7 @@ or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
 
 
 
-$query = "SELECT identifiant , pass FROM user where user.identifiant =  . '$login'  .  'and user.pass =' .  '$pass' ";
+$query = "SELECT identifiant , pass FROM user where user.identifiant =  '$login'  'and user.pass = '$pass' ";
 
 
 if (!($dbResult = mysqli_query($dbLink, $query))) {
