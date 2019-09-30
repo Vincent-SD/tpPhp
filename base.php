@@ -16,7 +16,7 @@ or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
 );
 
 
-$query='SELECT id, mail,date FROM user';
+$query='SELECT id, identifiant, mail,date FROM user';
 
 
 if (!($dbResult = mysqli_query($dbLink, $query))) {
@@ -31,6 +31,7 @@ if (!($dbResult = mysqli_query($dbLink, $query))) {
 
 while($dbRow = mysqli_fetch_assoc($dbResult))
 {
+    echo $dbRow['identifiant'] . '<br/>';
     echo $dbRow['id'] . '<br/>';
     echo $dbRow['email'] . '<br/>';
     echo date('d.m.Y', strtotime($dbRow['date'])) . '<br/>';
