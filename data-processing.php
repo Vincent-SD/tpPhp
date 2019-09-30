@@ -14,6 +14,17 @@ $pays = $_POST['pays'];
 $conditions = $_POST['conditions'];
 ;
 
+
+$dbLink = mysqli_connect('mysql-vsd.alwaysdata.net', 'vsd', 'EricZemour')
+or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
+
+
+
+mysqli_select_db($dbLink , 'vsd_bd')
+or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
+);
+
+
 if($action == 'mailer')
 {
     $today = date('Y-m-d');
@@ -21,7 +32,7 @@ if($action == 'mailer')
     $query = 'INSERT INTO user (mail, identifiant, id, pass, telephone, pays, date, genre, conditions) 
         VALUES ( \'' . $email . '\' ,
          \'' . $identifiant . '\',
-         \'' . 4 . '\' ,
+         ,
          \'' . $password. '\' ,
          \'' . $telephone . '\' ,
          \'' . $pays . '\' ,
