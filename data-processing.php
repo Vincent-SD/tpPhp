@@ -27,7 +27,7 @@ or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
 
 if($action == 'mailer')
 {
-    $today = date('Y-m-d');
+
 
     $query = 'INSERT INTO user (mail, identifiant, pass, telephone, pays, date, genre, conditions) 
         VALUES ( \'' . $email . '\' ,
@@ -39,7 +39,7 @@ if($action == 'mailer')
          \'' . $sexe . '\' ,
          \'' . $conditions . '\'
          )';
-//oui
+
     $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
     $message .= 'identifiant : ' . $identifiant . PHP_EOL;
     $message .= 'MAIS YA PAS EU DE MAIL YA PAS EU DE MAIL !!!!: ' . PHP_EOL;

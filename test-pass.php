@@ -1,10 +1,13 @@
-
 <?php
-
 
 include 'utils.inc.php';
 
-start_page('bd');
+
+$login = $_POST['login'];
+$pass  = $_POST['pass'];
+$action = $_POST['submit'];
+
+
 
 $dbLink = mysqli_connect('mysql-vsd.alwaysdata.net', 'vsd', 'EricZemour')
 or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
@@ -16,10 +19,10 @@ or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
 );
 
 
-$query='SELECT id, identifiant, mail,date FROM user';
 
 
 
+$query = 'SELECT identifiant , pass FROM user where identifiant = ' . $login . 'and pass =' . $pass;
 
 
 if (!($dbResult = mysqli_query($dbLink, $query))) {
@@ -32,19 +35,15 @@ if (!($dbResult = mysqli_query($dbLink, $query))) {
 }
 
 
-while($dbRow = mysqli_fetch_assoc($dbResult))
+if($dbRow = mysqli_fetch_assoc($dbResult))
 {
-    echo $dbRow['identifiant'] . '<br/>';
-    echo $dbRow['id'] . '<br/>';
-    echo $dbRow['email'] . '<br/>';
-    echo date('d.m.Y', strtotime($dbRow['date'])) . '<br/>';
-    echo '<br/><br/>';
+    header('Location: welcome.php');
+}
+else
+{
+    start_page('erreur');
 }
 
 
-
-
-
-end_page();
 
 ?>
