@@ -8,6 +8,10 @@ $action = $_POST['action'];
 $email  = $_POST['mail'];
 $password = $_POST['mdp'];
 $identifiant = $_POST['identifiant'];
+$sexe = $_POST['genre'];
+$telephone = $_POST['telephone'];
+$pays = $_POST['pays'];
+$conditions = $_POST['pays'];
 ;
 
 if($action == 'mailer')
@@ -27,11 +31,36 @@ else
     echo '<br/><strong>Bouton non géré !</strong><br/>';
 
 
-?>
+
+$today = date('Y-m-d');
 
 
+$query = 'INSERT INTO user (mail, identifiant, id, pass, telephone, pays, date, genre, conditions) 
+        VALUES ( \'' . $email . '\' ,
+         \'' . $identifiant . '\',
+         ,
+         \'' . $password. '\' ,
+         \'' . $telephone . '\' ,
+         \'' . $pays . '\' ,
+         \'' . $today . '\' ,
+         \'' . $sexe . '\' ,
+         \'' . $conditions . '\' ,
+         )';
 
-<?php
+
+if (!($dbResult = mysqli_query($dbLink, $query))) {
+    echo 'Erreur dans requête<br />';
+// Affiche le type d'erreur.
+    echo 'Erreur : ' . mysqli_error($dbLink) . '<br/>';
+// Affiche la requête envoyée.
+    echo 'Requête : ' . $query . '<br/>';
+    exit();
+}
+else {
+    echo '<br/><strong>bonsoir, votre inscription a bien été enregistrée.</strong><br/>';
+}
+
+
 end_page();
 
 ?>
