@@ -29,7 +29,7 @@ if($action == 'mailer')
 {
     $today = date('Y-m-d');
 
-    $query = 'INSERT INTO user (mail, identifiant, id, pass, telephone, pays, date, genre, conditions) 
+    $query = 'INSERT INTO user (mail, identifiant, pass, telephone, pays, date, genre, conditions) 
         VALUES ( \'' . $email . '\' ,
          \'' . $identifiant . '\',
          \'' . $password. '\' ,
