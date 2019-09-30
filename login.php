@@ -2,7 +2,7 @@
 
 include 'utils.inc.php';
 
-start
+start_page('login');
 
 ?>
 
@@ -11,3 +11,10 @@ start
     <input type="password" placeholder="mot de passe" name ="pass" /> <br>
     <input type="submit" name="action" value="submit"/> <br>
 </form>
+
+
+<?php
+
+    end_page();
+
+?>
