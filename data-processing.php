@@ -39,7 +39,7 @@ if($action == 'mailer')
          \'' . $sexe . '\' ,
          \'' . $conditions . '\'
          )';
-
+//oui
     $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
     $message .= 'identifiant : ' . $identifiant . PHP_EOL;
     $message .= 'MAIS YA PAS EU DE MAIL YA PAS EU DE MAIL !!!!: ' . PHP_EOL;
